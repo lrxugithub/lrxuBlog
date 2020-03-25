@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>图片上传</title>
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+  <style>
+    .app-container{
+      width: 200px;
+      height: 200px;
+      background-color: #fff;
+      background-image: url('https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1585140117250&di=19d3be0fdc268085b03016f828f84b6b&imgtype=0&src=http%3A%2F%2Fbpic.588ku.com%2Felement_origin_min_pic%2F01%2F35%2F29%2F39573bdc74cc8e3.jpg');
+      background-size: 200px 200px;
+      background-position: center center;
+      background-repeat: no-repeat;
+    }
+    #fileUpload{
+      width: 200px;
+      height: 200px;
+      background-color: transparent;
+      border: 1px dashed #ededed;
+      text-indent: -9999px;
+      opacity: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="app-container">
+    <input id="fileUpload" type="file" onchange="selectFile(event)" accept="image/jpg,image/jpeg,image/png,image/PNG"/>
+    <img src="" alt="" id="fileImg" height="200" width="200" style="display:none;"/>
+  </div>
+</body>
+<script src="./index.js"></script>
+</html>
