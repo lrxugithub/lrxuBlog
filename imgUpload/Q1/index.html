@@ -8,7 +8,8 @@
 </head>
 <body>
   <div class="app-container">
-    <input type="file" onchange="selectFile()" accept="image/jpg,image/jpeg,image/png,image/PNG"/>
+    <input id="fileUpload" type="file" onchange="selectFile(event)" accept="image/jpg,image/jpeg,image/png,image/PNG"/>
+    <img src="" alt="" id="fileImg" height="200" width="200" style="display:none;"/>
   </div>
 </body>
 <script src="./index.js"></script>
